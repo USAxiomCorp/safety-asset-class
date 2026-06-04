@@ -70,3 +70,61 @@ Failure to anchor ⇒ automatic BLOCK.
 The ledger MUST maintain:
 
 - **chronological
+T0 → T1 → T2 → … → Tk → …
+Each entry includes the hash of the previous entry.
+
+---
+
+## 5. Ledger Validation State
+
+The binary validation state \(S_{\text{state}}\) MUST be:
+
+- **1** if all Seven Constitutional Axioms evaluate TRUE at step \(k\)  
+- **0** if any axiom evaluates FALSE  
+
+If \(S_{\text{state}} = 0\), the system MUST:
+
+- emit BLOCK  
+- record the violated axiom index  
+- halt refinement  
+
+---
+
+## 6. Integration with R³
+
+R³ MUST:
+
+- emit a ledger entry at every refinement step  
+- anchor precursor and metadata hashes  
+- anchor the constitutional classification \(M(Y_k)\)  
+- propagate violation information  
+
+Ledger anchoring is part of the constitutional execution path.
+
+---
+
+## 7. Integration with PCIS‑1
+
+PCIS‑1 uses the ledger interface to:
+
+- record all refinement steps  
+- enforce Axiom IV and Axiom V  
+- guarantee provenance integrity  
+- provide machine‑verifiable audit trails  
+- ensure non‑compliance cannot execute  
+
+The ledger is mandatory for all Pharma Domain systems.
+
+---
+
+## 8. Compliance Requirements
+
+A process is ledger‑compliant if and only if:
+
+1. All refinement steps \(k \ge k_{\min}\) produce valid \(T_k\).  
+2. All \(T_k\) entries are hash‑linked and immutable.  
+3. All component verifications have corresponding audit entries.  
+4. All state hashes \(H(Y_k)\) are anchored.  
+5. Any tampering is detectable by recomputing the chain.  
+
+Failure of any condition MUST result in BLOCK.
