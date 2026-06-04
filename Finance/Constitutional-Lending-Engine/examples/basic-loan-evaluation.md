@@ -42,3 +42,4 @@ All predicates return 1 → **Loan is admissible**.
 ## 4. Output
 approved = true audit_entry = { collateral_value: 150000, required_collateral: 100000, post_leverage: 2.5, max_leverage: 3.0, jurisdictions: 0xA1B2, Xt: 0.42, XtNext: 0.39, timestamp: <block.timestamp> }
 
+
