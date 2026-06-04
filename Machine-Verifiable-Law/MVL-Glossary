@@ -1,0 +1,149 @@
+# Machine‑Verifiable Law (MVL) — Glossary
+## Foundation for Aligned Intelligence, Truth, and Humanity (FAITH)
+
+This glossary defines the formal terminology used throughout the Machine‑Verifiable Law (MVL) specification.  
+All definitions are normative and required for SAC certification, R³ refinement, RUAX execution, RAC auditability, and CSL enforcement.
+
+---
+
+## A
+
+### **Accountability Constraint**
+A constraint ensuring that responsibility for system actions is deterministically attributable.
+
+### **Attribution Record**
+A RAC‑anchored record identifying the operator, rule, and execution path responsible for a legal decision.
+
+---
+
+## B
+
+### **Boundary Event (Legal)**
+A RAC‑logged event triggered when a system approaches or attempts to cross a legal boundary.
+
+---
+
+## C
+
+### **Constitutional Constraint**
+A mathematically defined constraint representing a legal rule under MVL.
+
+### **Constraint Mapping**
+The bijective mapping:
+\[
+\phi : L \rightarrow C
+\]
+that converts legal rules into constitutional constraints.
+
+---
+
+## D
+
+### **Deterministic Legal Evaluation**
+The requirement that legal checks produce identical results for identical states.
+
+---
+
+## E
+
+### **Enforcement Layer**
+One of the four MVL enforcement layers:
+- R³ refinement  
+- RUAX execution  
+- RAC audit  
+- CSL hardware  
+
+### **Explainability Constraint**
+A constraint requiring that system decisions be explainable.
+
+---
+
+## F
+
+### **FAITH**
+The governing authority responsible for maintaining MVL and the entire constitutional safety stack.
+
+### **Fixed‑Point Legality**
+The requirement that all constitutional fixed‑points satisfy all legal constraints.
+
+---
+
+## H
+
+### **Hardware‑Level Legal Enforcement**
+CSL enforcement ensuring legal violations are physically impossible.
+
+---
+
+## L
+
+### **Legal Constraint**
+A predicate:
+\[
+L : S \rightarrow \{\text{true}, \text{false}\}
+\]
+representing a legal requirement.
+
+### **Legal Drift**
+Any change in system state that would move it toward illegality; prohibited under MVL.
+
+### **Legal Projection**
+The act of projecting a state back into the legal boundary using a CPO operator.
+
+### **Legal Safety Envelope**
+The set of all legally permissible states:
+\[
+\mathcal{B}_{\text{legal}}
+\]
+
+---
+
+## M
+
+### **Machine‑Verifiable Law (MVL)**
+The system that transforms legal rules into constitutional constraints and enforces them across refinement, execution, audit, and hardware.
+
+---
+
+## P
+
+### **Privacy Constraint**
+A constraint governing data minimization, purpose limitation, or other privacy requirements.
+
+---
+
+## R
+
+### **RAC‑Anchored Legal Check**
+A legal evaluation recorded immutably in the RAC audit chain.
+
+### **Risk‑Legal Functional**
+The component of the constitutional risk functional associated with legal compliance.
+
+---
+
+## S
+
+### **Safety Constraint (Legal)**
+A constraint ensuring that system behavior does not create legally unacceptable risk.
+
+### **State Legality**
+The property:
+\[
+L(S) = \text{true}
+\]
+
+---
+
+## T
+
+### **Traceability Constraint**
+A constraint requiring that all system actions be traceable.
+
+### **Tier 3 Legal Enforcement**
+Hardware‑level enforcement of legal constraints via CSL.
+
+---
+
+# Authority
+The MVL Glossary is maintained exclusively by FAITH and may be amended only through the governance processes defined in the Foundation Charter.
