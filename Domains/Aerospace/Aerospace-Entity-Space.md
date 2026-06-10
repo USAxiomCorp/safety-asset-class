@@ -33,7 +33,7 @@ Entities include:
 - Operator  
 - Regulatory Authority  
 
-Each entity MUST have a deterministic constitutional identity.
+Each entity must have a deterministic constitutional identity.
 
 ---
 
